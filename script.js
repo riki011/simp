@@ -1,8 +1,8 @@
 var url = "https://simpsonitos.com/episodes/los-simpson-";
             var x   = "x";
             
-            var temp = "Temporada ";
-            var cap = "Capitulo ";
+            var temp = 1;
+            var cap = 1;
 
 
 
@@ -13,8 +13,7 @@ function miFuncion()
             
             
             
-                temp=1;
-                cap=1;
+                
 
 
           
@@ -50,6 +49,18 @@ function miFuncion()
 
 
 
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementById('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+         temp = document.getElementById('temp').value;
+        cap = document.getElementById('cap').value;
+
+        
     miFuncion();
 
-      document.getElementById('prueba').addEventListener('click', miFuncion1)
+    document.getElementById('prueba').addEventListener('click', miFuncion1)
+
+
+    })
+});
